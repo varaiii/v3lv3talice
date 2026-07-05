@@ -484,6 +484,31 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  .card {
+    width: calc(100vw - 32px) !important;
+    max-width: 360px !important;
+    padding: 24px 18px 18px !important;
+  }
+
+  .logo-wrap {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    position: relative !important;
+  }
+
+  .logo-title {
+    font-size: 58px !important;
+    line-height: 0.9 !important;
+    letter-spacing: -1px !important;
+    max-width: 100% !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
   .page-shell {
     min-height: 100svh;
     align-items: center;
@@ -500,8 +525,8 @@ h1 {
   }
 
   .avatar {
-    width: 112px;
-    height: 112px;
+    width: 108px !important;
+    height: 108px !important;
     margin-bottom: 16px;
   }
 
@@ -549,11 +574,11 @@ h1 {
   }
 
   .link-button {
-    height: 72px;
+    height: 72px !important;
     min-height: 72px;
     grid-template-columns: 46px minmax(0, 1fr) 12px 20px;
     gap: 12px;
-    padding: 12px 16px;
+    padding: 12px 14px !important;
     border-radius: 24px;
   }
 

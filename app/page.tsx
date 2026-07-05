@@ -112,13 +112,13 @@ export default function Home() {
         愛・秘密
       </div>
 
-      <section className="profile-card" aria-label="Alice profile links">
+      <section className="profile-card card" aria-label="Alice profile links">
         <div className="avatar">
           <img src="/avatar.jpg" alt="Alice" />
         </div>
 
-        <div className="name-lockup">
-          <h1>ALICE</h1>
+        <div className="name-lockup logo-wrap">
+          <h1 className="logo-title">ALICE</h1>
           <span className="name-star">✦</span>
           <span className="japanese-name" aria-label="Alice in Japanese">
             アリス
