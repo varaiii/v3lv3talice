@@ -525,15 +525,10 @@ h1 {
     overflow: visible !important;
   }
 
-  .logo-title,
-  h1 {
-    font-size: 60px !important;
-    line-height: 0.9 !important;
-    letter-spacing: -1px !important;
+  .logo-title {
+    font-size: 42px !important;
+    line-height: .94 !important;
     white-space: nowrap !important;
-    max-width: 100% !important;
-    transform: none !important;
-    margin: 0 !important;
   }
 
   .name-star {
