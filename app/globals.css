@@ -253,34 +253,41 @@ a {
   object-position: center 42%;
 }
 
-.logoBlock {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto 10px;
+.name-lockup {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  column-gap: 7px;
+  margin-top: 2px;
 }
 
-.logoText {
+h1 {
   margin: 0;
   color: #d8b8c3;
-  font-family: var(--brush-font), serif;
-  font-size: 86px;
+  font-family: "Knewave", "Rock Salt", "Permanent Marker", "Sedgwick Ave", "Segoe Print", fantasy;
+  font-size: clamp(38px, 11.5vw, 51px);
+  font-style: italic;
   font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: -2px;
-  white-space: nowrap;
+  line-height: 0.94;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  transform: rotate(-1.5deg) skewX(-3deg);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.logoJapanese {
-  position: absolute;
-  right: -18px;
-  top: 50%;
-  color: #d8b8c3;
-  font-size: 12px;
+.name-star {
+  align-self: start;
+  margin-top: 6px;
+  color: var(--dust);
+  font-size: 14px;
+}
+
+.japanese-name {
+  color: rgba(234, 208, 215, 0.62);
+  font-size: 11px;
+  font-weight: 700;
   line-height: 1;
   text-orientation: upright;
-  transform: translateY(-50%);
   writing-mode: vertical-rl;
 }
 
@@ -506,32 +513,40 @@ a {
     margin: 0 auto 18px !important;
   }
 
-  .logoBlock {
+  .logo-wrap,
+  .name-lockup {
     width: 100% !important;
-    max-width: 260px !important;
+    max-width: 280px !important;
     margin: 0 auto 8px !important;
     position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     overflow: visible !important;
   }
 
-  .logoText {
-    width: 100% !important;
-    max-width: 260px !important;
-    margin: 0 !important;
-    font-size: 54px !important;
+  .logo-title,
+  h1 {
+    font-size: 60px !important;
     line-height: 0.9 !important;
     letter-spacing: -1px !important;
-    text-align: center !important;
     white-space: nowrap !important;
+    max-width: 100% !important;
     transform: none !important;
-    scale: none !important;
+    margin: 0 !important;
   }
 
-  .logoJapanese {
+  .name-star {
+    font-size: 11px;
+  }
+
+  .jp-text,
+  .japanese-text,
+  .japanese-name {
     position: absolute !important;
-    right: -8px !important;
+    right: 4px !important;
     top: 50% !important;
-    font-size: 10px !important;
+    font-size: 11px !important;
     transform: translateY(-50%) !important;
   }
 

@@ -117,9 +117,10 @@ export default function Home() {
           <img src="/avatar.jpg" alt="Alice" />
         </div>
 
-        <div className="logoBlock">
-          <h1 className="logoText">ALICE</h1>
-          <span className="logoJapanese" aria-label="Alice in Japanese">
+        <div className="name-lockup logo-wrap">
+          <h1 className="logo-title">ALICE</h1>
+          <span className="name-star">✦</span>
+          <span className="japanese-name" aria-label="Alice in Japanese">
             アリス
           </span>
         </div>
