@@ -1,3 +1,6 @@
+"use client";
+
+import { track } from "@vercel/analytics";
 import { ArrowUpRight, Heart } from "lucide-react";
 
 type LinkItem = {
@@ -23,6 +26,16 @@ const links: LinkItem[] = [
     icon: "instagram",
   },
 ];
+
+function trackLinkClick(link: LinkItem) {
+  if (link.icon === "telegram") {
+    track("telegram_click");
+  }
+
+  if (link.icon === "instagram") {
+    track("instagram_click");
+  }
+}
 
 function LinkIcon({ name }: { name: LinkItem["icon"] }) {
   if (name === "telegram") {
@@ -121,6 +134,7 @@ export default function Home() {
               className={link.featured ? "link-button featured" : "link-button"}
               href={link.href}
               key={link.title}
+              onClick={() => trackLinkClick(link)}
             >
               <span className="link-icon" aria-hidden="true">
                 <LinkIcon name={link.icon} />
