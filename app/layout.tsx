@@ -1,19 +1,33 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const metadataBase = process.env.VERCEL_URL
+  ? new URL(`https://${process.env.VERCEL_URL}`)
+  : new URL("http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase,
   title: "Alice",
-  description: "Private Telegram • Instagram",
+  description: "Welcome to my special place ✦",
   openGraph: {
     title: "Alice",
-    description: "Private Telegram • Instagram",
+    description: "Welcome to my special place ✦",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Alice",
+      },
+    ],
     type: "website",
     siteName: "Alice",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Alice",
-    description: "Private Telegram • Instagram",
+    description: "Welcome to my special place ✦",
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/icon.svg",
@@ -25,7 +39,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#07020d",
+  themeColor: "#1f1d20",
 };
 
 export default function RootLayout({
