@@ -13,8 +13,8 @@ type LinkItem = {
 
 const links: LinkItem[] = [
   {
-    title: "Telegram",
-    description: "Join my private Telegram",
+    title: "Private Community",
+    description: "My private community",
     href: "https://t.me/v3lv3talice",
     icon: "telegram",
     featured: true,
@@ -154,7 +154,6 @@ export default function Home() {
         <p className="footer-note">
           <span aria-hidden="true">✦</span>
           <Heart size={12} fill="currentColor" aria-hidden="true" />
-          <span>18+ only</span>
         </p>
       </section>
     </main>
